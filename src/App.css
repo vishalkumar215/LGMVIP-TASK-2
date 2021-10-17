@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+nav {
+  height: 14vh;
+  width: 100%;
+  background-image: linear-gradient(to right, rgb(251, 255, 0), #ebc03e);
+  color: black;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navitems {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.navitems h2 {
+  font-size: 30px;
+}
+
+.navitems button {
+  width: 20%;
+  height: 7vh;
+  border: 2px solid transparent;
+  border-radius: 30px;
+  background-color: lightskyblue;
+  font-family: serif;
+  font-size: 20px;
+  margin: auto 0px;
+}
+
+.fetchbtn:hover {
+  background-color: #fff;
+}
+.userdatacontainer {
+  width: 100%;
+  height: fit-content;
+  background-image: linear-gradient(to bottom right, lightsalmon, #64c9cf);
+}
+#main {
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
+  overflow: hidden;
+}
+.name:hover {
+  color: rgb(104, 17, 17);
+}
+
+.avatar {
+  border-radius: 30%;
+}
+
+.profile_cont {
+  border-radius: 15%;
+  background-image: radial-gradient(lightskyblue, #faee45);
+  margin: 5px;
+  padding: 10px;
+  width: 30%;
+  text-align: center;
+  transition: transform ease 0.2s;
+  opacity: 0.8;
+  margin-top: 8vh;
+}
+
+.profile_cont:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.footer {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
+  font-size: 21px;
+  font-weight: 400;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-decoration: double;
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+  font-size: large;
+  font-style: italic;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  background-color: rgb(247, 123, 74);
 }
